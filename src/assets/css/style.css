@@ -687,18 +687,18 @@ p {
     video area
 ---------------------------------------------------------------------------------------*/
 
-#video-area {
+#take-a-look {
     padding: 114px 0 100px;
     background-repeat: no-repeat;
     background-position: bottom;
     position: relative;
 }
 
-#video-area.bg-1 {
+#take-a-look.bg-1 {
     background-image: url(../images/counter-bg-1.png)
 }
 
-#video-area.bg-2 {
+#take-a-look.bg-2 {
     background-image: url(../images/counter-bg-2.png)
 }
 
