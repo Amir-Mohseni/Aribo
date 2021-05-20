@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import Logo from "../assets/images/logo.png";
+import { animateScroll } from 'react-scroll'
 
 // interface Props {}
 
 export default function Header() {
+
   useEffect(() => {
     const header = document.querySelector("header#header");
 
@@ -38,6 +40,21 @@ export default function Header() {
 
   }
 
+  const scrollTo = ( elId: string ) => {
+
+      const target = document.getElementById(elId)
+
+      animateScroll.scrollTo( target?.scrollTop || 0 )
+  }
+
+  const ScrollToMobile = ( elId : string ) => {
+
+    toggleMobileNav()
+    setTimeout( () => {
+        scrollTo(elId)
+    },400)
+  }
+
   return (
     <header id="header">
       <div className="container">
@@ -52,33 +69,28 @@ export default function Header() {
             <div className="nvabar-links">
               <ul className="navbar-ul">
                 <li className="nav-item">
-                  <a className="nav-link active" href="/#" >
+                  <a className="nav-link active" href="/#" onClick={ () => scrollTo('home-area') }>
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#" >
+                  <a className="nav-link" href="/#" onClick={ () => scrollTo('awesome-feat-area') } >
                     Features
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#" >
+                  <a className="nav-link" href="/#" onClick={ () => scrollTo('screenshot-area') } >
                     ScreenShots
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#" >
+                  <a className="nav-link" href="/#" onClick={ () => scrollTo('pricing-area') } >
                     Pricing
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#" >
+                  <a className="nav-link" href="/#" onClick={ () => scrollTo('team-area') } >
                     Team
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/#">
-                    Blog
                   </a>
                 </li>
                 <li className="nav-item download-btn ml-3">
@@ -107,33 +119,28 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/#" >
+                <a className="nav-link active" href="/#" onClick={ () => ScrollToMobile('home-area') } >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#" >
+                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('awesome-feat-area') } >
                   Features
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#" >
+                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('screenshot-area') } >
                   ScreenShots
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#" >
+                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('pricing-area') } >
                   Pricing
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#" >
+                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('team-area') } >
                   Team
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/#">
-                  Blog
                 </a>
               </li>
               

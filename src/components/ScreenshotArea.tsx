@@ -6,7 +6,7 @@ import Screen4 from '../assets/images/screen-4.jpg'
 
 export default function ScreenshotArea() {
   return (
-    <section id="screenshot-area" className="bg-1" data-scroll-index="2">
+    <section id="screenshot-area" className="bg-1" >
         <div className="container">
             <div className="row">
 

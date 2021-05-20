@@ -5,7 +5,7 @@ import IconResponsive from '../assets/images/icon-responsive.png'
 
 export default function AwesomeFeatures() {
   return (
-    <section id="awesome-feat-area" className="bg-1" data-scroll-index="1">
+    <section id="awesome-feat-area" className="bg-1">
         <div className="container">
             <div className="row">
 
