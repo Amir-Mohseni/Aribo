@@ -128,7 +128,7 @@
     #pricing-wrap .monthly {
         right: -20px;
     }
-    #video-area {
+    #take-a-look {
         padding: 120px 0 100px;
     }
     #app-download-area {
@@ -286,7 +286,7 @@
         right: 30px;
         top: 300px;
     }
-    #video-area {
+    #take-a-look {
         padding: 110px 0 100px;
     }
     .awesome-feat-img {
@@ -606,7 +606,7 @@
     .video.title {
         padding-bottom: 500px;
     }
-    #video-area {
+    #take-a-look {
         padding: 100px 0 30px;
         background-size: cover;
         background-position: top
@@ -1097,10 +1097,10 @@
     .video.title {
         padding-bottom: 350px;
     }
-    #video-area.bg-2 {
+    #take-a-look.bg-2 {
         padding-top: 80px;
     }
-    #video-area {
+    #take-a-look {
         padding: 95px 0 15px;
         background-size: cover;
         background-position: top
@@ -1671,7 +1671,7 @@
     .video.title {
         padding-bottom: 350px;
     }
-    #video-area {
+    #take-a-look {
         padding: 85px 0 15px;
         background-size: cover;
         background-position: top
@@ -2144,7 +2144,7 @@
     .about-info-single .content p {
         font-size: 15px;
     }
-    #video-area.bg-2 {
+    #take-a-look.bg-2 {
         padding-top: 65px;
     }
     .card .card-header a::after {

@@ -6,8 +6,8 @@ import './index.css';
 import './assets/css/icofont.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/css/bootstrap-reboot.min.css'
-import './assets/css/responsive.css';
 import './assets/css/style.css';
+import './assets/css/responsive.css';
 
 // JS Imports
 import 'bootstrap/dist/js/bootstrap'

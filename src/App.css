@@ -135,6 +135,76 @@ nav.navbar .container {
   }
 }
 
+
+
+/* Awesome Features Styles */
+
+.carousel-wrap {
+  /* padding-right: 20px; */
+}
+
+.awesome-feat-single .icon img {
+  padding: 0;
+}
+
+.carousel-arrows {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.carousel-prev {
+  margin-right: 20px;
+}
+
+.carousel-next, .carousel-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 5px 20px 0px rgb(94 66 85 / 10%);
+  box-shadow: 0px 5px 20px 0px rgb(94 66 85 / 10%);
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #f075c7;
+
+}
+
+.carousel-next:hover, .carousel-prev:hover {
+  background: linear-gradient( 
+    55deg
+    , rgb(240, 117, 199) 0%, rgb(145, 145, 255) 100%);
+  color: #fff;
+}
+
+
+
+.carousel-next svg, .carousel-prev svg {
+  width: 30px;
+}
+
+.icon-arrow-pointing-to-right:before {
+  display: block;
+  content: "\e900";
+}
+
+.icon-arrow-pointing-to-left:before {
+  content: "\e908";
+}
+
+
+@media( min-width: 1200px ){
+  
+  .react-multi-carousel-item {
+    margin: 0 10px 0 10px ;
+  }
+  
+}
+
 @media( max-width: 1000px ){
   
   .navbar-toggler {
