@@ -1,4 +1,4 @@
-import React, { useState, MutableRefObject } from "react";
+import React, { useState } from "react";
 import AppMockUp3 from "../assets/images/app-mocup-3.png";
 import IconSetting from "../assets/images/icon-setting.png";
 import IconResponsive from "../assets/images/icon-responsive.png";
@@ -10,14 +10,6 @@ export default function AwesomeFeatures() {
   const [carousel,setCarousel] = useState< Carousel | null >(null)
 
   const responsive = {
-    // superLargeDesktop: {
-    //   breakpoint: { max: 5000, min: 1920 },
-    //   items: 2,
-    // },
-    // LargeDesktop: {
-    //   breakpoint: { max: 5000, min: 1600 },
-    //   items: 2,
-    // },
     desktop: {
       breakpoint: { max: 200000, min: 1200 },
       items: 2,
