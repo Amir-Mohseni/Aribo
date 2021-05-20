@@ -1,3 +1,147 @@
 .App {
   text-align: center;
 }
+
+header#header {
+  background: transparent;
+  padding: 10px 0 !important;
+}
+
+header#header.sticky {
+  position: sticky;
+  background: -webkit-gradient( linear, left top, right top, from(#20007e), to(#e61eb6));
+    background: linear-gradient( 
+90deg
+, #20007e 0%, #e61eb6 100%);
+}
+
+.logo {
+  z-index: 10;
+}
+
+nav.navbar {
+  padding: 0;
+}
+
+header .container {
+  padding: 0;
+}
+
+nav.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-toggler {
+  display: none;
+  color: #fff;
+  z-index: 10;
+}
+
+.nvabar-links .navbar-ul {
+  display: flex;
+  align-items: center;
+}
+
+/* .navbar-ul .nav-item {
+  display: flex;
+} */
+
+.nav-item .download-btn {
+  padding: 0 6px;
+}
+
+.download-btn .nav-link {
+  -webkit-box-shadow: 0px 10px 30px 0px rgb(21 10 82 / 35%);
+  box-shadow: 0px 10px 30px 0px rgb(21 10 82 / 35%);
+  background: -webkit-gradient(linear, right top, left top, from(#2e19a7), to(#ae0ee9));
+  background: linear-gradient(to left, #2e19a7, #ae0ee9);
+  border-radius: 25px;
+  padding: 10px 34px;
+  background-size: 100% auto;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background: -webkit-gradient( linear, left top, right top, from(#20007e), to(#e61eb6));
+    background: linear-gradient( 
+  90deg
+  , #20007e 0%, #e61eb6 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+
+.showMobileNav {
+  animation: showMobileNav 0.4s ease forwards;
+}
+
+.hideMobileNav {
+  animation: hideMobileNav 0.4s ease forwards;
+}
+
+.mobile-nav .navbar-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav .navbar-ul li {
+  margin: 25px 0;
+}
+
+@keyframes showMobileNav {
+  
+  0% {
+    transform: translateY(-100vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes hideMobileNav {
+  
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
+@media( max-width: 1000px ){
+  
+  .navbar-toggler {
+    display: block;
+  }
+
+  .nvabar-links .navbar-ul {
+    display: none;
+  }
+}
