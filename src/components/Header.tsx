@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Logo from "../assets/images/logo.png";
-import { animateScroll } from 'react-scroll'
+import Scroll from 'react-scroll'
 
 // interface Props {}
 
@@ -44,7 +44,7 @@ export default function Header() {
 
       const target = document.getElementById(elId)
 
-      animateScroll.scrollTo( target?.scrollTop || 0 )
+      Scroll.animateScroll.scrollTo( target?.offsetTop || 0 )
   }
 
   const ScrollToMobile = ( elId : string ) => {
@@ -52,7 +52,7 @@ export default function Header() {
     toggleMobileNav()
     setTimeout( () => {
         scrollTo(elId)
-    },400)
+    },300)
   }
 
   return (
