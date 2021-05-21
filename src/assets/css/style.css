@@ -2077,14 +2077,18 @@ p {
     background-image: linear-gradient( 45deg, rgb(157, 91, 254) 0%, rgb(56, 144, 254) 100%);
 }
 
-.card .card-header.active a,
-.card .card-header:hover a,
+.card .card-header.active .card-question,
+.card .card-header:hover .card-question,
 .card-body p,
-.card.v-dark .card-header a {
+.card.v-dark .card-header .card-question {
     color: #fff
 }
 
-.card .card-header a {
+.card .card-header .card-question {
+	width: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
     font-size: 18px;
     line-height: 28px;
     font-weight: 600;
@@ -2094,14 +2098,14 @@ p {
     position: relative
 }
 
-.card .card-header a:after {
+.card .card-header .card-question:after {
     content: '\eab2';
     font-family: 'IcoFont';
     position: absolute;
     right: 30px
 }
 
-.card .card-header.active a:after {
+.card .card-header.active .card-question:after {
     content: '\eab9';
     font-family: 'IcoFont'
 }

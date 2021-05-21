@@ -79,8 +79,8 @@ export default function Header() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#" onClick={ () => scrollTo('screenshot-area') } >
-                    ScreenShots
+                  <a className="nav-link" href="/#" onClick={ () => scrollTo('how-work-area') } >
+                    How it works
                   </a>
                 </li>
                 <li className="nav-item">
@@ -129,8 +129,8 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('screenshot-area') } >
-                  ScreenShots
+                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('how-work-area') } >
+                  How it works
                 </a>
               </li>
               <li className="nav-item">

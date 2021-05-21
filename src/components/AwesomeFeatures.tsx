@@ -107,19 +107,6 @@ export default function AwesomeFeatures() {
                   </p>
                 </div>
 
-                <div className="awesome-feat-single text-center">
-                  <div className="icon two">
-                    <img src={IconResponsive} className="img-fluid" alt="" />
-                  </div>
-                  <h3>Responsive Design For All Devices</h3>
-                  <p>
-                    Arribo is Best app to help you take control of your device
-                    data.Apps that have the power to transform workflows,
-                    improve client relationships,boost your productivity and
-                    organize your life.{" "}
-                  </p>
-                </div>
-
               </Carousel>
 
               <div className="carousel-arrows">

@@ -1,6 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function PricingArea() {
+
+	const [isMonthly,setIsMonthly] = useState<boolean>(true)
+
+	const toggleMonthly = ( data: boolean ) => {
+
+		if ( data && !isMonthly ) setIsMonthly(true)
+		if ( !data && isMonthly ) setIsMonthly(false)
+
+	}
+
   return (
     <section id="pricing-area">
         <div className="container">
@@ -16,9 +26,9 @@ export default function PricingArea() {
                     </div>
 
                     <div className="toggle-container">
-                        <div className="switch-toggles">
-                            <div className="monthly active">Monthly</div>
-                            <div className="yearly">Yearly</div>
+                        <div className={`switch-toggles ${ !isMonthly ? `active` : ''}`}>
+                            <div className={`monthly ${ isMonthly ? `active` : ''}`} onClick={ () => toggleMonthly( true ) }>Monthly</div>
+                            <div className={`yearly ${ !isMonthly ? `active` : ''}`} onClick={ () => toggleMonthly( false ) }>Yearly</div>
                         </div>
                     </div>
 
@@ -28,7 +38,7 @@ export default function PricingArea() {
                     <div id="pricing-wrap">
 
                         {/* start monthly pricing table */}
-                        <div className="monthly active">
+                        <div className={`monthly ${ isMonthly ? `active` : ''}`}>
                             <div className="price-tbl-single highlighted">
                                 <div className="table-inner text-center">
                                     <h4>start</h4>
@@ -52,7 +62,7 @@ export default function PricingArea() {
                         {/* end monthly pricing table */}
 
                         {/* start monthly pricing table */}
-                        <div className="yearly">
+                        <div className={`yearly ${ !isMonthly ? `active` : ''}`}>
                             <div className="price-tbl-single highlighted">
                                 <div className="table-inner text-center">
                                     <h4>Standard</h4>

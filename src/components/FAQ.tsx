@@ -1,7 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import FAQImage from '../assets/images/faq-img-1.png'
+import { FAQCardsInterface, ReadtFaqCards} from './FAQCards'
 
 export default function FAQ() {
+
+	const [FAQCards, setFAQCards ] = useState<FAQCardsInterface[]>(ReadtFaqCards)
+
+	const changeActiveFaqCard = ( faqCard: FAQCardsInterface ) => {
+
+		let newFaqs;
+
+		if( faqCard.active ) {
+
+			newFaqs = FAQCards.map( card => {
+	
+				if( card.number === faqCard.number ){
+					card.active = false
+				}
+	
+				return card
+	
+			})
+			
+		} else {
+
+			newFaqs = FAQCards.map( card => {
+	
+				if( card.number === faqCard.number ){
+					card.active = true
+				} else card.active = false
+	
+				return card
+	
+			})
+		}
+
+
+		setFAQCards(newFaqs)
+	}
+
   return (
     <section id="faq-area" className="bg-1">
         <div className="container">
@@ -24,8 +61,32 @@ export default function FAQ() {
 
                     <div id="accordion" role="tablist">
 
+											{
+												FAQCards.map( card => (
+
+													<div className="card">
+                            <div className={`card-header ${ card.active ? 'active' : ''}`} >
+                                <h5 className="mb-0">
+                                    <button 
+																			className="card-question" 
+																			onClick={ () => changeActiveFaqCard( card ) }
+																		>
+																				{ card.question }
+																			</button>
+                                </h5>
+                            </div>
+                            <div  className={`${ card.active ? 'show' : 'd-none'}`} >
+                                <div className="card-body">
+                                    <p>{ card.answer }</p>
+                                </div>
+                            </div>
+                        	</div>
+
+												))
+											}
+
                         {/* start faq single */}
-                        <div className="card">
+                        {/* <div className="card">
                             <div className="card-header active" role="tab" id="faq1">
                                 <h5 className="mb-0">
                                     <a data-toggle="collapse" href="#collapse1" aria-expanded="true" aria-controls="collapse1">Is the Mobile App Secure?</a>
@@ -36,11 +97,11 @@ export default function FAQ() {
                                     <p>Both the Mobile Apps and the Mobile Web App give you the ability to you to access your account information, view news releases, report an outage, and contact us via email or phone. Once you've installed a Mobile App on your phone, you'll also have the ability to view a map of our offices and payment locations.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         {/* end faq single */}
 
                         {/* start faq single */}
-                        <div className="card">
+                        {/* <div className="card">
                             <div className="card-header" role="tab" id="faq2">
                                 <h5 className="mb-0">
                                     <a className="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">What features does the Mobile App have?</a>
@@ -51,11 +112,11 @@ export default function FAQ() {
                                     <p>Both the Mobile Apps and the Mobile Web App give you the ability to you to access your account information, view news releases, report an outage, and contact us via email or phone. Once you've installed a Mobile App on your phone, you'll also have the ability to view a map of our offices and payment locations.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         {/* end faq single */}
 
                         {/* start faq single */}
-                        <div className="card">
+                        {/* <div className="card">
                             <div className="card-header" role="tab" id="faq3">
                                 <h5 className="mb-0">
                                     <a className="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">How do I get the Mobile App for my phone?</a>
@@ -66,11 +127,11 @@ export default function FAQ() {
                                     <p>Both the Mobile Apps and the Mobile Web App give you the ability to you to access your account information, view news releases, report an outage, and contact us via email or phone. Once you've installed a Mobile App on your phone, you'll also have the ability to view a map of our offices and payment locations.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         {/* end faq single */}
 
                         {/* start faq single */}
-                        <div className="card">
+                        {/* <div className="card">
                             <div className="card-header" role="tab" id="faq4">
                                 <h5 className="mb-0">
                                     <a className="collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">How does Arribo differ from usual apps? </a>
@@ -81,7 +142,7 @@ export default function FAQ() {
                                     <p>Both the Mobile Apps and the Mobile Web App give you the ability to you to access your account information, view news releases, report an outage, and contact us via email or phone. Once you've installed a Mobile App on your phone, you'll also have the ability to view a map of our offices and payment locations.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         {/* end faq single */}
 
                     </div>

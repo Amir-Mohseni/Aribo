@@ -9,7 +9,7 @@ import TakeALook from './components/TakeALook'
 import AwesomeFeatures from './components/AwesomeFeatures'
 import WorkArea from './components/WorkArea'
 import NewsletterArea from './components/NewsletterArea'
-import ScreenshotArea from './components/ScreenshotArea'
+// import ScreenshotArea from './components/ScreenshotArea'
 import PricingArea from './components/PricingArea'
 import CustomPlan from './components/CustomPlan'
 import Team from './components/Team'
@@ -39,7 +39,7 @@ function App() {
 
       <NewsletterArea />
 
-      <ScreenshotArea />
+      {/* <ScreenshotArea /> */}
 
       <PricingArea />
 
