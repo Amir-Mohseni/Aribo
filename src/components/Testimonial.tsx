@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { readyTestimonials, TestimonialsInterface } from "../data/Testimonials";
 
 export default function Testimonial() {
+
   const [testimonials, setTestimonials] =
     useState<TestimonialsInterface[]>(readyTestimonials);
 
@@ -42,7 +43,7 @@ export default function Testimonial() {
         <div className="testi-wrap">
           {testimonials.map((test) => (
             <div
-              key={test.position}
+              key={ test.name}
               className={`client-single ${
                 test.active ? "active" : "inactive"
               } position-${test.position}`}
