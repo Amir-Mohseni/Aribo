@@ -1,10 +1,7 @@
 import React from "react";
+import { gotoDownload } from '../Functions/Scroll'
 
-interface HeroProps {
-	showArriboModal: Function ;
-}
-
-export default function Header({ showArriboModal }: HeroProps) {
+export default function Header() {
   return (
     <section id="home-area" className="bg-1">
       <div className="container">
@@ -17,14 +14,14 @@ export default function Header({ showArriboModal }: HeroProps) {
                           <h4 className="text-light font-open-sans">Arribo is the most unique mobile app, designed for managing startups, small business projects, and supporting modern companies.</h4>
                           
                           <div className="caption-btns">
-                              <button className="bg" onClick={ () => showArriboModal()} >Download Now</button>
+                              <button className="bg" onClick={gotoDownload} >Download Now</button>
                           </div>
 
                           <div className="caption-download-btns">
                               <ul>
-                                  <li><button onClick={ () => showArriboModal()} ><i className="icofont-brand-android-robot"></i></button></li>
-                                  <li className="ml-1"><button onClick={ () => showArriboModal()} ><i className="icofont-brand-apple"></i></button></li>
-                                  <li className="ml-1"><button onClick={ () => showArriboModal()} ><i className="icofont-brand-windows"></i></button></li>
+                                  <li><button onClick={gotoDownload} ><i className="icofont-brand-android-robot"></i></button></li>
+                                  <li className="ml-1"><button onClick={gotoDownload} ><i className="icofont-brand-apple"></i></button></li>
+                                  <li className="ml-1"><button onClick={gotoDownload} ><i className="icofont-brand-windows"></i></button></li>
                               </ul>
                           </div>
                       </div>

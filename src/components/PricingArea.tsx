@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { gotoDownload } from '../Functions/Scroll'
 
 export default function PricingArea() {
 
@@ -55,7 +56,7 @@ export default function PricingArea() {
                                         <li>Easy to Customize</li>
                                         <li>Support Unlimited User</li>
                                     </ul>
-                                    <button >get started</button>
+                                    <button onClick={gotoDownload} >get started</button>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +80,7 @@ export default function PricingArea() {
                                         <li>Easy to Customize</li>
                                         <li>Support Unlimited User</li>
                                     </ul>
-                                    <button >get started</button>
+                                    <button onClick={gotoDownload} >get started</button>
                                 </div>
                             </div>
                         </div>

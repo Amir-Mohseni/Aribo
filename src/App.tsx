@@ -35,13 +35,13 @@ function App() {
   return (
     <div className="App">
       
-      <Header showArriboModal={showArriboModal} />
+      <Header />
 
 			{ showModal && 
 				<NotReadyModal hideArriboModal={hideArriboModal} />
 			}
 
-      <Hero showArriboModal={showArriboModal} />
+      <Hero />
 
       <Features />
 

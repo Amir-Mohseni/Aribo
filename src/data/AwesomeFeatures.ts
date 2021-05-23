@@ -1,7 +1,7 @@
 import IconSetting from "../assets/images/icon-setting.png";
 import IconResponsive from "../assets/images/icon-responsive.png";
 
-export interface AwesomeFeaturesInterface {
+interface AwesomeFeaturesInterface {
 	number: string;
 	title: string;
 	text: string;

@@ -1,12 +1,8 @@
 import React, { useEffect } from "react";
 import Logo from "../assets/images/logo.png";
-import Scroll from 'react-scroll'
+import { scrollTo, gotoDownload } from '../Functions/Scroll'
 
-interface HeaderProps {
-	showArriboModal: Function ;
-}
-
-export default function Header( { showArriboModal }: HeaderProps ) {
+export default function Header() {
 
   useEffect(() => {
     const header = document.querySelector("header#header");
@@ -40,13 +36,6 @@ export default function Header( { showArriboModal }: HeaderProps ) {
 
     }
 
-  }
-
-  const scrollTo = ( elId: string ) => {
-
-      const target = document.getElementById(elId)
-
-      Scroll.animateScroll.scrollTo( target?.offsetTop || 0 )
   }
 
   const ScrollToMobile = ( elId : string ) => {
@@ -96,7 +85,7 @@ export default function Header( { showArriboModal }: HeaderProps ) {
                   </button>
                 </li>
                 <li className="nav-item download-btn ml-3">
-                  <button className="nav-link" onClick={ () => showArriboModal() } >
+                  <button className="nav-link" onClick={ () => gotoDownload() } >
                     Download
                   </button>
                 </li>
@@ -116,7 +105,7 @@ export default function Header( { showArriboModal }: HeaderProps ) {
             <ul className="navbar-ul ">
 
               <li className="nav-item download-btn ml-3">
-                <button className="nav-link" onClick={ () => { toggleMobileNav(); showArriboModal()} } >
+                <button className="nav-link" onClick={ () => { toggleMobileNav(); gotoDownload() } } >
                   Download
                 </button>
               </li>

@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 // CSS Imports
 import './index.css';
 import './assets/css/icofont.min.css';
+import './assets/css/icomoon.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/css/bootstrap-reboot.min.css'
 import './assets/css/style.css';

@@ -252,6 +252,17 @@ nav.navbar .container {
 	margin-top: 15px;
 }
 
+.developer-referer {
+	color: rgba(255, 255, 255, 0.8);
+	transition: color 0.3s;
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+.developer-referer:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
 @media( min-width: 1200px ){
   
   .react-multi-carousel-item {
