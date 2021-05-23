@@ -16,7 +16,7 @@ export default function CustomPlan() {
                         </div>
                         <div className="col-lg-12">
                             <div className="plan-btn text-center">
-                                <a href="/#">Use Cost Calculator</a>
+                                <button >Use Cost Calculator</button>
                             </div>
                         </div>
                     </div>

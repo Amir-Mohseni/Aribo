@@ -74,7 +74,7 @@ export default function Features() {
                 {/* start read more button */}
                 <div className="col-lg-12">
                     <div className="load-more-btn text-center">
-                        <a href="/#">Learn More</a>
+                        <button >Learn More</button>
                     </div>
                 </div>
                 {/* end read more button */}

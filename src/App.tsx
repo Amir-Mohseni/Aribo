@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 import Header from './components/Header'
+import NotReadyModal from './components/NotReadyModal'
 import Hero from './components/Hero'
 import Features from './components/Features'
 import About from './components/About'
@@ -20,12 +21,27 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
+
+	const [ showModal, setShowModal ] = useState(false)
+
+	const showArriboModal = (): void => {
+		if( !showModal ) setShowModal(true)
+	}
+
+	const hideArriboModal = (): void => {
+		if( showModal ) setShowModal(false)
+	}
+
   return (
     <div className="App">
       
-      <Header />
+      <Header showArriboModal={showArriboModal} />
 
-      <Hero />
+			{ showModal && 
+				<NotReadyModal hideArriboModal={hideArriboModal} />
+			}
+
+      <Hero showArriboModal={showArriboModal} />
 
       <Features />
 
@@ -49,7 +65,7 @@ function App() {
 
       <Testimonial />
 
-      <DownloadArea />
+      <DownloadArea showArriboModal={showArriboModal} />
 
       <FAQ />
 

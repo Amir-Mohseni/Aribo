@@ -12,7 +12,7 @@ export default function Footer() {
                         <p className="text-light">Don't waste another minute.Create an account now and start saving more time.Do even more with the Arribo.</p>
                     </div>
                     <div className="col-lg-6 col-md-4">
-                        <a href="/#">Create an Account</a>
+                        <button >Create an Account</button>
                     </div>
                 </div>
             </div>

@@ -39,6 +39,10 @@ a:hover {
     outline: none;
 }
 
+button {
+	background: transparent;
+}
+
 a,
 button {
     -webkit-transition: 0.3s;
@@ -288,21 +292,21 @@ p {
     margin-top: 45px;
 }
 
-.caption-btns a {
+.caption-btns button {
     display: inline-block;
     margin: 0 8px;
     font-weight: 600;
     color: #fff;
 }
 
-.caption-btns a {
+.caption-btns button {
     display: inline-block;
     margin: 0 8px;
     font-weight: 600;
     color: #fff;
 }
 
-.caption-btns a i {
+.caption-btns button i {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -317,12 +321,12 @@ p {
     margin-right: 8px
 }
 
-.caption-btns.v2 a i {
+.caption-btns.v2 button i {
     background: -webkit-gradient(linear, left top, right top, from(#9d5bfe), to(#3890fe));
     background: linear-gradient(90deg, #9d5bfe, #3890fe);
 }
 
-.caption-btns a.bg {
+.caption-btns button.bg {
     background-image: -webkit-gradient( linear, left top, right top, from(#ae0ee9), to(#2e19a7));
     background-image: linear-gradient( 90deg, #ae0ee9 0%, #2e19a7 100%);
     background-size: 100% auto;
@@ -330,7 +334,7 @@ p {
     border-radius: 30px
 }
 
-.caption-btns.v2 a.bg {
+.caption-btns.v2 button.bg {
     background: -webkit-gradient(linear, left top, right top, from(#9d5bfe), to(#3890fe));
     background: linear-gradient(90deg, #9d5bfe, #3890fe);
 }
@@ -343,13 +347,14 @@ p {
     display: inline-block;
 }
 
-.caption-download-btns li a {
-    display: block;
+.caption-download-btns li button {
+    display: flex;
+		justify-content: center;
+		align-items: center;
     width: 40px;
     height: 40px;
     background-image: -webkit-gradient( linear, left top, right top, from(#ae0ee9), to(#2e19a7));
     background-image: linear-gradient( 90deg, #ae0ee9 0%, #2e19a7 100%);
-    text-align: center;
     line-height: 40px;
     font-size: 20px;
     border-radius: 50%;
@@ -359,12 +364,12 @@ p {
     background-size: 100% auto
 }
 
-.caption-download-btns.v2 li a {
+.caption-download-btns.v2 li button {
     background: -webkit-gradient(linear, left top, right top, from(#9d5bfe), to(#3890fe));
     background: linear-gradient(90deg, #9d5bfe, #3890fe);
 }
 
-.caption-download-btns li a:hover,
+.caption-download-btns li button:hover,
 .caption-btns a.bg:hover,
 .caption-btns a i:hover {
     background-size: 200% auto
@@ -558,7 +563,7 @@ p {
     color: #f03858
 }
 
-.load-more-btn a {
+.load-more-btn button {
     background-image: -webkit-gradient( linear, left top, right top, from(rgb(174, 14, 233)), to(rgb(46, 25, 167)));
     background-image: linear-gradient( 90deg, rgb(174, 14, 233) 0%, rgb(46, 25, 167) 100%);
     -webkit-box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.35);
@@ -573,7 +578,7 @@ p {
     background-size: 100% auto
 }
 
-.load-more-btn a:hover {
+.load-more-btn button:hover {
     background-size: 200% auto
 }
 
@@ -1521,7 +1526,7 @@ p {
     color: #e2ecfc;
 }
 
-.price-tbl-single a {
+.price-tbl-single button {
     display: inline-block;
     padding: 15px 36px;
     border-radius: 30px;
@@ -1535,11 +1540,11 @@ p {
     background-size: 100% auto
 }
 
-.price-tbl-single a:hover {
+.price-tbl-single button:hover {
     background-size: 200% auto
 }
 
-.price-tbl-single.two a {
+.price-tbl-single.two button {
     background: linear-gradient( 45deg, rgb(157, 91, 254) 0%, rgb(56, 144, 254) 100%);
 }
 
@@ -1625,7 +1630,7 @@ p {
     background-image: url(../images/custom-plan-bg-2.png);
 }
 
-.plan-btn a {
+.plan-btn button {
     display: inline-block;
     background-image: linear-gradient(45deg, rgb(174, 14, 233) 0%, rgb(46, 25, 167) 100%);
     color: #fff;
@@ -1636,14 +1641,14 @@ p {
     text-transform: uppercase
 }
 
-.plan-btn.two a {
+.plan-btn.two button {
     background-image: -webkit-gradient( linear, left top, right top, from(rgb(157, 91, 254)), to(rgb(56, 144, 254)));
     background-image: linear-gradient( 90deg, rgb(157, 91, 254) 0%, rgb(56, 144, 254) 100%);
     -webkit-box-shadow: 0px 13px 20px 0px rgba(0, 14, 254, 0.3);
     box-shadow: 0px 13px 20px 0px rgba(0, 14, 254, 0.3);
 }
 
-.plan-btn a:hover {
+.plan-btn button:hover {
     background-size: 200% auto
 }
 
@@ -1941,7 +1946,7 @@ p {
     box-shadow: 0px 13px 20px 0px rgba(57, 143, 254, 0.3);
 }
 
-.download-btns a {
+.download-btns button {
     display: inline-block;
     border: 1px solid #fff;
     padding: 12px 35px;
@@ -1951,7 +1956,7 @@ p {
     font-weight: 500;
 }
 
-.download-btns a.bg {
+.download-btns button.bg {
     background-image: -webkit-gradient( linear, left top, right top, from(rgb(174, 14, 233)), to(rgb(46, 25, 167)));
     background-image: linear-gradient( 90deg, rgb(174, 14, 233) 0%, rgb(46, 25, 167) 100%);
     -webkit-box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.35);
@@ -1960,24 +1965,24 @@ p {
     background-size: 100% auto
 }
 
-.download-btns.two a.bg,
-.download-btns.two a:hover {
+.download-btns.two button.bg,
+.download-btns.two button:hover {
     background-image: linear-gradient( 45deg, rgb(157, 91, 254) 0%, rgb(56, 144, 254) 100%)
 }
 
-.download-btns a:hover {
+.download-btns button:hover {
     background-image: -webkit-gradient( linear, left top, right top, from(rgb(174, 14, 233)), to(rgb(46, 25, 167)));
     background-image: linear-gradient( 90deg, rgb(174, 14, 233) 0%, rgb(46, 25, 167) 100%);
     -webkit-box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.35);
     box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.35);
 }
 
-.download-btns a.bg:hover {
+.download-btns button.bg:hover {
     background-size: 200% auto
 }
 
-.download-btns a i,
-.download-btns a img {
+.download-btns button i,
+.download-btns button img {
     padding-right: 4px;
 }
 
@@ -2266,7 +2271,7 @@ p {
     margin: 0 0 20px;
 }
 
-.get-started a {
+.get-started button {
     display: inline-block;
     float: right;
     background-image: -webkit-gradient( linear, left top, right top, from(rgb(174, 14, 233)), to(rgb(46, 25, 167)));
@@ -2282,7 +2287,7 @@ p {
     background-size: 100% auto
 }
 
-.get-started a:hover {
+.get-started button:hover {
     background-size: 200% auto
 }
 

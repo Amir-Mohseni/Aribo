@@ -55,7 +55,7 @@ export default function PricingArea() {
                                         <li>Easy to Customize</li>
                                         <li>Support Unlimited User</li>
                                     </ul>
-                                    <a href="/#">get started</a>
+                                    <button >get started</button>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ export default function PricingArea() {
                                         <li>Easy to Customize</li>
                                         <li>Support Unlimited User</li>
                                     </ul>
-                                    <a href="/#">get started</a>
+                                    <button >get started</button>
                                 </div>
                             </div>
                         </div>

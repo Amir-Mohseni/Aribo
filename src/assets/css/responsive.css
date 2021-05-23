@@ -249,7 +249,7 @@
     .caption h1 {
         margin-bottom: 20px;
     }
-    .load-more-btn a {
+    .load-more-btn button {
         margin-top: 30px;
     }
     .about-app-mocup img {
@@ -423,7 +423,7 @@
     #footer {
         background-size: cover;
     }
-    .get-started a {
+    .get-started button {
         padding: 15px 20px;
     }
     .footer-widget {
@@ -559,7 +559,7 @@
     .core-feature-single {
         margin: 0 0 30px;
     }
-    .load-more-btn a {
+    .load-more-btn button {
         margin-top: 30px;
     }
     .caption h1 {
@@ -743,7 +743,7 @@
     #footer {
         background-size: cover;
     }
-    .get-started a {
+    .get-started button {
         padding: 15px 20px;
         margin: 20px 0 0;
         float: left
@@ -914,7 +914,7 @@
     .navbar-nav .nav-item.download-btn .nav-link {
         margin-top: 15px;
     }
-    .caption-btns a.bg {
+    .caption-btns button.bg {
         padding: 10px 18px;
     }
     .core-feature-single .icon,
@@ -960,7 +960,7 @@
     .counter.title {
         padding-bottom: 60px;
     }
-    .price-tbl-single a {
+    .price-tbl-single button {
         padding: 12px 30px;
     }
     .download-btns {
@@ -973,7 +973,7 @@
     .app-reviews {
         text-align: center;
     }
-    .download-btns a {
+    .download-btns button {
         margin: 0 20px;
     }
     .contact-form button {
@@ -1063,7 +1063,7 @@
     #core-feature-area {
         margin-bottom: 0;
     }
-    .load-more-btn a {
+    .load-more-btn button {
         margin-top: 30px;
     }
     .about-app-mocup {
@@ -1243,7 +1243,7 @@
     #footer {
         background-size: cover;
     }
-    .get-started a {
+    .get-started button {
         padding: 10px 20px;
         margin: 20px 0 0;
         float: left
@@ -1474,7 +1474,7 @@
     .navbar-nav .nav-item.download-btn .nav-link {
         margin-top: 15px;
     }
-    .caption-btns a.bg {
+    .caption-btns button.bg {
         padding: 10px 18px;
     }
     .core-feature-single .icon,
@@ -1523,7 +1523,7 @@
         padding-bottom: 60px;
         margin-top: 40px
     }
-    .price-tbl-single a {
+    .price-tbl-single button {
         padding: 12px 30px;
     }
     .download-btns {
@@ -1542,7 +1542,7 @@
     .contact-form button {
         padding: 12px 22px;
     }
-    .load-more-btn a {
+    .load-more-btn button {
         padding: 12px 30px;
     }
     #contact-area {
@@ -1637,7 +1637,7 @@
     .core-feature-single {
         margin: 0 0 30px;
     }
-    .load-more-btn a {
+    .load-more-btn button {
         margin-top: 30px;
     }
     .about-app-mocup {
@@ -1815,7 +1815,7 @@
     #footer {
         background-size: cover;
     }
-    .get-started a {
+    .get-started button {
         padding: 15px 20px;
         margin: 20px 0 0;
         float: left
@@ -2020,7 +2020,7 @@
     .blog-pagination.two {
         margin: 50px 0 0;
     }
-    .post-cont h3 a {
+    .post-cont h3 button {
         font-size: 26px;
         line-height: 36px;
     }
@@ -2049,7 +2049,7 @@
     .navbar-nav .nav-item.download-btn .nav-link {
         margin-top: 15px;
     }
-    .caption-btns a.bg {
+    .caption-btns button.bg, .caption-btns button.bg {
         padding: 10px 18px;
     }
     .core-feature-single .icon,
@@ -2097,7 +2097,7 @@
     .counter.title {
         padding-bottom: 60px;
     }
-    .price-tbl-single a {
+    .price-tbl-single button {
         padding: 12px 30px;
     }
     .download-btns {
@@ -2110,19 +2110,19 @@
     .app-reviews {
         text-align: center;
     }
-    .download-btns a {
+    .download-btns button {
         margin: 0 5px;
     }
     .contact-form button {
         padding: 12px 22px;
     }
-    .load-more-btn a {
+    .load-more-btn button {
         padding: 12px 30px;
     }
     #contact-area {
         background-size: 0;
     }
-    .caption-btns a {
+    .caption-btns button {
         margin: 0 4px;
     }
     #home-area.bg-1 {

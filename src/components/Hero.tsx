@@ -1,7 +1,10 @@
 import React from "react";
-// interface Props {}
 
-export default function Header() {
+interface HeroProps {
+	showArriboModal: Function ;
+}
+
+export default function Header({ showArriboModal }: HeroProps) {
   return (
     <section id="home-area" className="bg-1">
       <div className="container">
@@ -14,15 +17,14 @@ export default function Header() {
                           <h4 className="text-light font-open-sans">Arribo is the most unique mobile app, designed for managing startups, small business projects, and supporting modern companies.</h4>
                           
                           <div className="caption-btns">
-                              <a className="bg" href="/#">Download Now</a>
-                              {/* <a className="popup-video" href="https://www.youtube.com/watch?v=iaj8ktgL3BY&amp;t=5s"><i className="icofont-ui-play"></i> Play video</a> */}
+                              <button className="bg" onClick={ () => showArriboModal()} >Download Now</button>
                           </div>
 
                           <div className="caption-download-btns">
                               <ul>
-                                  <li><a href="/#"><i className="icofont-brand-android-robot"></i></a></li>
-                                  <li className="ml-1"><a href="/#"><i className="icofont-brand-apple"></i></a></li>
-                                  <li className="ml-1"><a href="/#"><i className="icofont-brand-windows"></i></a></li>
+                                  <li><button onClick={ () => showArriboModal()} ><i className="icofont-brand-android-robot"></i></button></li>
+                                  <li className="ml-1"><button onClick={ () => showArriboModal()} ><i className="icofont-brand-apple"></i></button></li>
+                                  <li className="ml-1"><button onClick={ () => showArriboModal()} ><i className="icofont-brand-windows"></i></button></li>
                               </ul>
                           </div>
                       </div>

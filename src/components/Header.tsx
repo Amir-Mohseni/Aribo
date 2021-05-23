@@ -2,9 +2,11 @@ import React, { useEffect } from "react";
 import Logo from "../assets/images/logo.png";
 import Scroll from 'react-scroll'
 
-// interface Props {}
+interface HeaderProps {
+	showArriboModal: Function ;
+}
 
-export default function Header() {
+export default function Header( { showArriboModal }: HeaderProps ) {
 
   useEffect(() => {
     const header = document.querySelector("header#header");
@@ -61,42 +63,42 @@ export default function Header() {
         <nav className="navbar">
           <div className="container">
             {/* Logo */}
-            <a className="logo" href="/#">
-              <img src={Logo} alt="logo" />
+            <a className="logo" href="/">
+              <img src={Logo} alt="Arribo" />
             </a>
 
             {/* navbar links */}
             <div className="nvabar-links">
               <ul className="navbar-ul">
                 <li className="nav-item">
-                  <a className="nav-link active" href="/#" onClick={ () => scrollTo('home-area') }>
+                  <button className="nav-link active"  onClick={ () => scrollTo('home-area') }>
                     Home
-                  </a>
+                  </button>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#" onClick={ () => scrollTo('awesome-feat-area') } >
+                  <button className="nav-link"  onClick={ () => scrollTo('awesome-feat-area') } >
                     Features
-                  </a>
+                  </button>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#" onClick={ () => scrollTo('how-work-area') } >
+                  <button className="nav-link"  onClick={ () => scrollTo('how-work-area') } >
                     How it works
-                  </a>
+                  </button>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#" onClick={ () => scrollTo('pricing-area') } >
+                  <button className="nav-link"  onClick={ () => scrollTo('pricing-area') } >
                     Pricing
-                  </a>
+                  </button>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/#" onClick={ () => scrollTo('team-area') } >
+                  <button className="nav-link"  onClick={ () => scrollTo('team-area') } >
                     Team
-                  </a>
+                  </button>
                 </li>
                 <li className="nav-item download-btn ml-3">
-                  <a className="nav-link" href="/#" >
+                  <button className="nav-link" onClick={ () => showArriboModal() } >
                     Download
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -114,34 +116,34 @@ export default function Header() {
             <ul className="navbar-ul ">
 
               <li className="nav-item download-btn ml-3">
-                <a className="nav-link" href="/#" >
+                <button className="nav-link" onClick={ () => { toggleMobileNav(); showArriboModal()} } >
                   Download
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/#" onClick={ () => ScrollToMobile('home-area') } >
+                <button className="nav-link active" onClick={ () => ScrollToMobile('home-area') } >
                   Home
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('awesome-feat-area') } >
+                <button className="nav-link" onClick={ () => ScrollToMobile('awesome-feat-area') } >
                   Features
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('how-work-area') } >
+                <button className="nav-link" onClick={ () => ScrollToMobile('how-work-area') } >
                   How it works
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('pricing-area') } >
+                <button className="nav-link" onClick={ () => ScrollToMobile('pricing-area') } >
                   Pricing
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/#" onClick={ () => ScrollToMobile('team-area') } >
+                <button className="nav-link" onClick={ () => ScrollToMobile('team-area') } >
                   Team
-                </a>
+                </button>
               </li>
               
             </ul>

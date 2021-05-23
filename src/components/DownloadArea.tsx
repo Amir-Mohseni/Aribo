@@ -2,8 +2,11 @@ import React from 'react'
 import IMacMockup from '../assets/images/imac-mocup.png'
 import PlayStoreIcon from '../assets/images/playstore-icon.png'
 
+interface DownloadProps {
+	showArriboModal: Function ;
+}
 
-export default function DownloadArea() {
+export default function DownloadArea({ showArriboModal }: DownloadProps) {
   return (
     <section id="app-download-area" data-scroll-index="5">
         <div className="app-download-bg bg-1"></div>
@@ -29,7 +32,8 @@ export default function DownloadArea() {
                     <div className="col-lg-6 col-md-7">
 
                         <div className="download-btns">
-                            <a href="/#"><img src={PlayStoreIcon} className="img-fluid" alt="" /> Play Store</a><a className="bg" href="/#"><i className="icofont-brand-apple"></i> App Store</a>
+                            <button onClick={ () => showArriboModal() } ><img src={PlayStoreIcon} className="img-fluid" alt="" /> Play Store</button>
+														<button className="bg" onClick={ () => showArriboModal() }><i className="icofont-brand-apple"></i> App Store</button>
                         </div>
 
                         <div className="row">

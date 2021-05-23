@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+button {
+	outline: none;
+	border: none;
+}
+
 header#header {
   background: transparent;
   padding: 10px 0 !important;
@@ -137,8 +142,13 @@ nav.navbar .container {
 
 /* Awesome Features Styles */
 
-.carousel-wrap {
-  /* padding-right: 20px; */
+.react-multi-carousel-item {
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+.react-multi-carousel-item--active {
+	opacity: 1;
 }
 
 .awesome-feat-single .icon img {
@@ -179,8 +189,6 @@ nav.navbar .container {
   color: #fff;
 }
 
-
-
 .carousel-next svg, .carousel-prev svg {
   width: 30px;
 }
@@ -194,6 +202,55 @@ nav.navbar .container {
   content: "\e908";
 }
 
+.not-ready-wrapper {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+.not-ready-modal {
+	width: 450px;
+	height: fit-content;
+	border-radius: 12px;
+	padding: 25px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.not-ready-modal h1 {
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	flex: 1;
+	margin-bottom: 0;
+}
+
+.not-ready-modal p {
+	width: 100%;
+	font-size: 18px;
+	text-align: left;
+}
+
+.got-it {
+	-webkit-box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.35);
+	box-shadow: 0px 10px 30px 0px rgba(21, 10, 82, 0.35);
+	background: -webkit-gradient(linear, right top, left top, from(#2e19a7), to(#ae0ee9));
+	background: linear-gradient(to left, #2e19a7, #ae0ee9);
+	border-radius: 25px;
+	padding: 10px 34px;
+	background-size: 100% auto;
+	color: #fff;
+	font-size: 20px;
+	width: 70%;
+	margin-top: 15px;
+}
 
 @media( min-width: 1200px ){
   
@@ -204,12 +261,43 @@ nav.navbar .container {
 }
 
 @media( max-width: 1000px ){
-  
-  .navbar-toggler {
-    display: block;
+	
+	.navbar-toggler {
+		display: block;
   }
-
+	
   .nvabar-links .navbar-ul {
-    display: none;
+		display: none;
   }
+}
+
+@media( max-width: 500px ){
+
+	.not-ready-modal {
+		width: 80%;
+	}
+	
+	/* .not-ready-modal .logo-holder {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	
+	.not-ready-modal .logo-holder img {
+		width: 100%;
+	} */
+	
+	.not-ready-modal h1 {
+		/* width: 100%;
+		text-align: center; */
+		font-size: 20px;
+		/* margin-left: 10px; */
+	}
+	
+	.not-ready-modal p {
+		/* width: 100%; */
+		font-size: 16px;
+	}
+
 }
